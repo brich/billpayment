@@ -192,16 +192,14 @@
 
     <div class="form-container">&nbsp;</div>
     <div class="form-container">
-	    <p>By clicking submit below, you have agreed to pay the above amount.</p>
+	    <p>By clicking submit below, you have agreed to pay the above amount.<br />
+        <strong>Please note:</strong> do not click on the Submit button more than once, it could cause multiple payments. Also, there is a two minute timeout placed on submitting this form. If your transaction fails, please wait for at least two minutes before resubmitting the form.</p>
     </div>
 
     <div class="form-container">&nbsp;</div>
     <div class="form-container">
         <div class="form-label">
-            <asp:Button ID="btnSubmit" runat="server" Text=" " ToolTip="Click to submit." OnClick="SubmitButton_Click" CssClass="button" Enabled="false" />
-        </div>
-        <div class="form-element">
-            <asp:Label runat="server" ID="lblButtonTimeout" />
+            <asp:Button ID="btnSubmit" runat="server" Text=" " ToolTip="Click to submit." OnClick="SubmitButton_Click" CssClass="button" />
         </div>
     </div>
 

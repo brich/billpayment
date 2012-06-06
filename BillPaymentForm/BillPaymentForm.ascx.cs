@@ -51,19 +51,7 @@ namespace BillPaymentForm
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // See if the Submit Button has been disabled due to it being clicked in the last 3 minutes
-            HttpCookie cookie = Request.Cookies["ButtonTimeout"];
-            if (cookie == null)
-            {
-                // The cookie is expired, clear all messages and enable the button
-                lblButtonTimeout.Text = " ";
-                btnSubmit.Enabled = true;
-            }
-            else
-            {
-                // The cookie has not expired so show the disabled message
-                lblButtonTimeout.Text = "<p><strong><span style='color:red;'>You have clicked Submit in the past 3 minutes, please wait for 3 minutes and refresh this page.</span></strong></p>";
-            }
+            
         }
 
         public void SubmitButton_Click(object sender, System.EventArgs e)
@@ -71,16 +59,6 @@ namespace BillPaymentForm
             // Grab current Date and Time
             DateTime oPaymentDate = DateTime.Now;
             string sPaymentDate = oPaymentDate.ToString("M/d/yyyy hh:mm:ss tt");
-
-            // Create a cookie for Submit Button Timeout
-            HttpCookie cookie = Request.Cookies["ButtonTimeout"];
-            if (cookie == null)
-            {
-                cookie = new HttpCookie("ButtonTimeout");
-            }
-            cookie["Name"] = sPaymentDate;
-            cookie.Expires = DateTime.Now.AddMinutes(3);
-            Response.Cookies.Add(cookie);
 
             // Hide the Payment Panel
             Payment.Visible = false;

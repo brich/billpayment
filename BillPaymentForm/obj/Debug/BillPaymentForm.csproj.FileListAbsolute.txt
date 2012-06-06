@@ -3,3 +3,8 @@ Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\BillPaymentForm\bin\BillP
 Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\BillPaymentForm\obj\Debug\ResolveAssemblyReference.cache
 Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\BillPaymentForm\obj\Debug\BillPaymentForm.dll
 Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\BillPaymentForm\obj\Debug\BillPaymentForm.pdb
+Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\bin\BillPaymentForm.dll
+Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\bin\BillPaymentForm.pdb
+Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\obj\Debug\ResolveAssemblyReference.cache
+Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\obj\Debug\BillPaymentForm.dll
+Z:\Brad On My Mac\Projects\BillPayment\BillPaymentForm\obj\Debug\BillPaymentForm.pdb
