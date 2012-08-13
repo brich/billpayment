@@ -75,11 +75,11 @@
 
     <div class="form-container">
 	    <div class="form-label">
-		    <p class="bottom"><span style="color: #ff0000;">* </span>Card Number:<br /><i>16 Digits Required</i></p>
+		    <p class="bottom"><span style="color: #ff0000;">* </span>Card Number:<br /><i>15 - 16 Digits Required</i></p>
 	    </div>
 	    <div class="form-element">
 		    <asp:TextBox ID="txtCCNumber" runat="server" ToolTip="Please enter the card number." CssClass="special" />
-		    <asp:RegularExpressionValidator ID="RequiredExpressionValidator3" runat="server" ErrorMessage="<p class='bottom'><span style='color: #ff0000;'>Please enter a valid card number.</span></p>" ValidationExpression="(\d{16})" ControlToValidate="txtCCNumber" Display="Dynamic" />
+		    <asp:RegularExpressionValidator ID="RequiredExpressionValidator3" runat="server" ErrorMessage="<p class='bottom'><span style='color: #ff0000;'>Please enter a valid card number.</span></p>" ValidationExpression="(\d{15,16})" ControlToValidate="txtCCNumber" Display="Dynamic" />
 		    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="<p class='bottom'><span style='color: #ff0000;'>Please enter the card number.</span></p>" ControlToValidate="txtCCNumber" Display="Dynamic" />
 	    </div>
     </div>
